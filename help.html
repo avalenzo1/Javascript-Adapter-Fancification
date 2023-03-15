@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Appzi: Capture Insightful Feedback -->
+    <script async src="https://w.appzi.io/w.js?token=Ncolh"></script>
+    <!-- End Appzi -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="search.js"></script>
+    <link rel="icon" href="images/nghslogo.png">
+    <title>Help</title>
+</head>
+
+<body onload="enter(),search()">
+    <div class="nav">
+        <button onclick="location.href='index.html';"><i class='fas fa-home fa-fw"'></i> Home</button>
+        <button onclick="location.href='Javascript Adapter.html';"><i class='fas fa-code'></i> Javascript Adapter</button>
+    </div>
+    <div class="helpbanner">
+        <img alt="help" class="question-img" src="images/question.png" />
+        <div style="float:left;padding-left:8em;position: absolute;">
+            <span class="title">Help</span><br>
+            <span class="subtitles">Having problems with your code? Search what you need help with below.</span>
+        </div>
+    </div>
+    <div class="search">
+        <form formaction="help.html">
+            <input autocomplete="off" name="query" type="search" onkeypress="search()" id="searchInput" placeholder="Example: 'Moving Objects'" title="Search for posts...">
+        </form>
+    </div>
+    <div class="results">
+        <ul id="resultUL">
+            <li>
+                <a href="help-pages/drawarect.html">
+                    <h3>Drawing a Rectangle</h3>
+                    <p>Learn how to draw a rectangle in javascript and how the computer may interpret your rectangle code.</p>
+                    <!-- Tags: How to draw rectangle, Rectangle, How to make a rectangle -->
+                </a>
+            </li>
+            <li>
+                <a href="practice-pages/rectpractice.html">
+                    <h3>Rectangle Helper - Practice 1</h3>
+                    <p>Struggling with rectangles? Use the rectangle helper.</p>
+                    <!-- Tags: rectangle, square, rectangle pratice, rectangle helper, helper -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/drawanarc.html">
+                    <h3>Drawing a Circle</h3>
+                    <p>Learn how to draw a circle in javascript and how the computer may interpret your code.</p>
+                    <!-- Tags: How to draw circle, How to draw a circle, How to make a circle, How to make circle, Arc, Circle -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/variables.html">
+                    <h3>Variables</h3>
+                    <p>Learn how variables work here!</p>
+                    <!-- Tags: How to, what are variables -->
+                </a>
+            </li>
+            <li>
+                <a href="practice-pages/arcpractice.html">
+                    <h3>Circle Helper - Practice 2</h3>
+                    <p>Struggling with circles? Use the circle helper.</p>
+                    <!-- Tags: arc, circle, circle pratice, arc practice -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/movingobjs.html">
+                    <h3>Moving an Object</h3>
+                    <p>Learn how to move objects, e.g., rectangle, circle, across the screen.</p>
+                    <!-- Tags: How to, moving objects, how to move objects, how to move an object -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/scalingobjs.html">
+                    <h3>Scaling an Object</h3>
+                    <p>Learn how to scale objects, e.g., rectangle, circle, across the screen.</p>
+                    <!-- Tags: How to, objects, scaling, change, how to change the size, size, how to scale, how to change the size of -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/conditions.html">
+                    <h3>Condition Statements</h3>
+                    <p>Learn how to code "if" statements.</p>
+                    <!-- Tags: How to, stopping, stop -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/stoppingobjs.html">
+                    <h3>Stopping an Object</h3>
+                    <p>Learn how to stop objects according to x and y coordinates.</p>
+                    <!-- Tags: How to, stopping, stop -->
+                </a>
+            </li>
+            <li>
+                <a href="help-pages/drawlinedobjs.html">
+                    <h3>Drawing Lined Shapes</h3>
+                    <p>Learn how to draw a custom shape and how the computer may interpret your code.</p>
+                    <!-- Tags: How to draw a lined shape, line, shape, draw lined shape -->
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Appzi: Capture Insightful Feedback -->
+    <script async src="https://w.appzi.io/w.js?token=Ncolh"></script>
+    <!-- End Appzi -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="javascript.js"></script>
+    <title>Javascript Adapter</title>
+    <link rel="icon" href="images/nghslogo.png">
+</head>
+
+<body>
+    <div class="nav">
+        <button onclick="home()"><i class='fas fa-home fa-fw"'></i> Home</button>
+        <button onclick="reportBug()">Report a Bug</button>
+        <button onclick="help()" style="color:white;float:right;background-color:#1a1a1a;"><i class='fas fa-question-circle'></i> Help</button>
+        <button onclick="screenToggle()" style="color:white;float:right;background-color:#1a1a1a;margin-right:0.25em;"><i class='fas fa-expand'></i></button>
+    </div>
+    <div id="fullscreen">
+        <h1>IDK how to do fullscreen canvas... :(</h1>
+    </div>
+    <div class="wrapper">
+        <div class="row">
+            <div class="column">
+                <div class="inputs">
+                    <p>keyDown(e)</p><br>
+                    <textarea id="keyDown" cols="65" rows="5"></textarea>
+                    <br>
+                    <p>initialize()</p><br>
+                    <textarea id="initialize" cols="65" rows="5"></textarea>
+                    <br>
+                    <p>repeatingForever()</p><br>
+                    <textarea id="repeatingForever" cols="65" rows="17">// Ctrl + Shift + X to run code immediately. For phones, click on canvas //</textarea>
+                </div>
+                <div class="options">
+                    <button class="options-button" onclick="copyEverything()"> Copy All</button>
+                    <button class="options-button" onclick="copyText()"> Copy Text</button>
+                    <button class="options-button" onclick="copyPic()"> Copy Pic</button>
+                    <button class="options-button" onclick="colors()"> Colors</button>
+                    <button class="exe-button" style="margin-left: 0.25em" onclick="transferData()">Run</button>
+                    <button class="exe-button" onclick="newJSA()">JSA (click here)</button>
+                </div>
+            </div>
+            <div class="column">
+                <canvas onclick="transferData()" id="gc" width="500" height="600" tabindex="0" oncontextmenu="return false;"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2020 North-Grand High School (Alpha 3.0)</p>
+    </div>
+</body>
+
+</html>

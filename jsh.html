@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <!-- Appzi: Capture Insightful Feedback -->
+    <script async src="https://w.appzi.io/w.js?token=Ncolh"></script>
+    <!-- End Appzi -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <title>Javascript Adapter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/nghslogo.png">
+</head>
+
+<body>
+    <div class="nav">
+        <button onclick="home()"><i class='fas fa-home fa-fw"'></i> Home</button>
+        <button onclick="reportBug()">Report a Bug</button>
+        <button onclick="help()" style="color:white;float:right;background-color:#1a1a1a;"><i class='fas fa-question-circle'></i> Help</button>
+        <button onclick="screenToggle()" style="color:white;float:right;background-color:#1a1a1a;margin-right:0.25em;"><i class='fas fa-expand'></i></button>
+    </div>
+    <canvas id="gc2" width="1000" height="0" tabindex="0" oncontextmenu="return false;" style="display: none;"></canvas>
+    <canvas id="gc3" width="1000" height="0" tabindex="0" oncontextmenu="return false;" style="display: none;"></canvas>
+    <div class="wrapper">
+        <div class="row">
+            <div class="column">
+                <div class="inputs">
+                    <p>keyDown(e)</p><br>
+                    <textarea id="keyDown" cols="65" rows="5"></textarea>
+                    <br>
+                    <p>initialize()</p><br>
+                    <textarea id="initialize" cols="65" rows="5"></textarea>
+                    <br>
+                    <p>repeatingForever()</p><br>
+                    <textarea id="repeatingForever" cols="65" rows="17"></textarea>
+                    <br>
+                </div>
+                <div class="options">
+                    <button class="options-button" onclick="copyEverything()"> Copy All </button>
+                    <button class="options-button" onclick="colors()"> Colors </button>
+                    <button class="options-button" onclick="copyText()"> Copy Text </button>
+                    <button class="options-button" onclick="copyPic()"> Copy Pic </button>
+                    <button class="options-button" onclick="oldCode()"> Import </button>
+                    <button class="exe-button" style="margin-left: 0.25em" class="options-button" onclick="transferData()">Run</button>
+                </div>
+
+                <br><textarea id="prevCode" class="minor"></textarea>
+            </div>
+            <div class="column">
+                <canvas id="gc" width="500" height="600" tabindex="0" oncontextmenu="return false;"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2020 North-Grand High School (Alpha 4.1)</p>
+    </div>
+    <script src="jsh.js"></script>
+</body>
+
+</html>

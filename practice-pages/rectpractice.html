@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rectangle Helper</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="rectprac.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="icon" href="images/nghslogo.png">
+</head>
+
+<body>
+    <div class="nav">
+        <button onclick="location.href='../help-pages/drawarect.html';">Back to Help Page <i class="fa fa-arrow-right"></i></button>
+    </div>
+    <div class="wrapper">
+        <div class="row">
+            <div class="column">
+                <div class="inputs">
+                    <br> cc.fillStyle = '<input id="color" maxlength="15" size="9">'
+                    <br>
+                    <br> cc.fillRect(
+                    <input style="color:deepskyblue;" id="coorx" maxlength="3" size="1">,<input style="color:goldenrod;" id="coory" maxlength="3" size="1">,<input style="color:magenta;" id="width" maxlength="3" size="1">,<input style="color:green;" id="height"
+                        maxlength="3" size="1"> )
+                    <br><br><br><br>
+                    <button onclick="toggleRectLines()">Toggle: Helper Lines</button>
+                </div>
+            </div>
+            <div class="column">
+                <canvas id="gc" width="506" height="606" tabindex="0" oncontextmenu="return false;"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

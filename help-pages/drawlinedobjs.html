@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Appzi: Capture Insightful Feedback -->
+    <script async src="https://w.appzi.io/w.js?token=Ncolh"></script>
+    <!-- End Appzi -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="../style.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/nghslogo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="javascript-help.js"></script>
+    <title>Help - Drawing Lined Shapes</title>
+</head>
+
+<body onload="equalHeight()">
+    <div class="alert-warning s" id="s">
+        <span class="s-span"><strong>Warning!</strong> <span style="font-weight:normal;">This page is still in the works.</span></span>
+        <button onclick="closeS()"><i class="fa fa-close"></i></button>
+    </div>
+    <div class="nav">
+        <button id="phone-nav" onclick="toggleNav()"><i class="fa fa-navicon"></i></button>
+        <button onclick="location.href='../index.html';"><i class='fas fa-home fa-fw"'></i> Home</button>
+        <button onclick="location.href='../Javascript%20Adapter.html';"><i class='fas fa-code'></i> Javascript Adapter</button>
+    </div>
+    <div id="nav" class="sidenav">
+        <div class="sidenav-header">
+            <form action="../help.html">
+                <input autocomplete="off" name="query" type="search"><button class="submit-button"><i class='fas fa-search'></i></button>
+            </form>
+        </div>
+        <div class="sidenav-links">
+            <button onclick="location.href='drawarect.html';">Drawing a Rectangle</button>
+            <button onclick="location.href='drawanarc.html';">Drawing a Circle</button>
+            <button onclick="location.href='variables.html';">Variables</button>
+            <button onclick="location.href='movingobjs.html';">Moving an Object</button>
+            <button onclick="location.href='scalingobjs.html';">Scaling an Object</button>
+            <button onclick="location.href='conditions.html';">Condition Statements</button>
+            <button onclick="location.href='stoppingobjs.html';">Stopping an Object</button>
+            <button onclick="location.href='drawlinedobjs.html';" style="background: #56A5C6;">Drawing Lined Shapes</button>
+        </div>
+    </div>
+    <div id="content-wrapper" class="content-wrapper">
+        <div class="banner">
+            <span class="title">Drawing Lined Shapes</span>
+        </div>
+        <div class="banner-sub">
+            <p>Home » Unit 1 » Drawing Lined Shapes</p>
+        </div>
+        <div class="options-content">
+            <button onclick="location.href='stoppingobjs.html';" style="float: left;"><i class="fa fa-arrow-left"></i></button>
+            <button onclick="location.href='#';" style="float: right;"><i class="fa fa-arrow-right"></i></button>
+        </div>
+        <div id="content-wrapper" class="content">
+            <br><br>
+            <div class="code-box">
+                <span style="color:#006eff">cc.fillStyle</span> = "#000"
+                <br><span style="background:yellow;"><span style="color:#ff3300">cc.beginPath</span>()</span>
+                <br><span style="color:#ff3300">cc.moveTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y) <span style="color:#d33154">// minimum of two</span>
+                <br><span style="color:#ff3300">cc.closePath</span>()
+                <br><span style="color:#ff3300">cc.fill</span>()
+            </div>
+
+            <li>No arguments. <span style="color:#ff3300">beginPath()</span> begins the path.</li>
+            <br>
+            <div class="code-box">
+                <span style="color:#006eff">cc.fillStyle</span> = "#000"
+                <br><span style="color:#ff3300">cc.beginPath</span>()
+                <br><span style="background:yellow;"><span style="color:#ff3300">cc.moveTo</span>(x,y)</span>
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y) <span style="color:#d33154">// minimum of two</span>
+                <br><span style="color:#ff3300">cc.closePath</span>()
+                <br><span style="color:#ff3300">cc.fill</span>()
+            </div>
+
+            <li><span style="color:#ff3300">moveTo()</span> is the first point of your shape. There is only one of these!</li>
+            <br>
+            <div class="code-box">
+                <span style="color:#006eff">cc.fillStyle</span> = "#000"
+                <br><span style="color:#ff3300">cc.beginPath</span>()
+                <br><span style="color:#ff3300">cc.moveTo</span>(x,y)
+                <br><span style="background:yellow;"><span style="color:#ff3300">cc.lineTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y) <span style="color:#d33154">// minimum of two</span></span>
+                <br><span style="color:#ff3300">cc.closePath</span>()
+                <br><span style="color:#ff3300">cc.fill</span>()
+            </div>
+
+            <li><span style="color:#ff3300">lineTo()</span> is the next point of your shape.</li>
+            <li>You can place as many of these as you need to fill your shape. (There should be atleast two of these)</li>
+            <br>
+            <div class="code-box">
+                <span style="color:#006eff">cc.fillStyle</span> = "#000"
+                <br><span style="color:#ff3300">cc.beginPath</span>()
+                <br><span style="color:#ff3300">cc.moveTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y) <span style="color:#d33154">// minimum of two</span>
+                <br><span style="background:yellow;"><span style="color:#ff3300">cc.closePath</span>()</span>
+                <br><span style="color:#ff3300">cc.fill</span>()
+            </div>
+            <li><span style="color:#ff3300">closePath()</span> fills in the gap between the first and last coordinates given.</li>
+            <li>Is at the end of your shape.</li>
+            <br>
+            <div class="code-box">
+                <span style="color:#006eff">cc.fillStyle</span> = "#000"
+                <br><span style="color:#ff3300">cc.beginPath</span>()
+                <br><span style="color:#ff3300">cc.moveTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y)
+                <br><span style="color:#ff3300">cc.lineTo</span>(x,y) <span style="color:#d33154">// minimum of two</span>
+                <br><span style="color:#ff3300">cc.closePath</span>()
+                <br><span style="background:yellow;"><span style="color:#ff3300">cc.fill</span>()</span>
+            </div>
+            <li><span style="color:#ff3300">fill()</span> fills in the shape with the color of <span style="color:#006eff">fillStyle</span></li>
+            <br>
+            <h3>Example:</h3>
+            <br>
+            <div class="code-box">
+                <span style="color:#006eff">cc.fillStyle</span> = "pink"
+                <br><span style="color:#ff3300">cc.beginPath</span>()
+                <br><span style="color:#ff3300">cc.moveTo</span>(50,100)
+                <br><span style="color:#ff3300">cc.lineTo</span>(100,0)
+                <br><span style="color:#ff3300">cc.lineTo</span>(150,100)
+                <br><span style="color:#ff3300">cc.closePath</span>()
+                <br><span style="color:#ff3300">cc.fill</span>()
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
